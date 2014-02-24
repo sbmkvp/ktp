@@ -1,0 +1,22 @@
+html, body, svg {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display:block;
+}
+
+#visualisation {
+	height: 100%;
+	background-color: #ddd;
+}
+
+#analysis {
+	height: 100%;
+	background-color: #bbb;
+	overflow: auto;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
