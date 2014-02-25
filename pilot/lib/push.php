@@ -12,17 +12,19 @@
 	// $people=$_POST['people'];
 	// Connect to server and select databse.
 	
-	// if (
-		mysql_connect("db516200454.db.1and1.com", "dbo516200454", "Like\$amb6");
-
-	// 	){
+	// $remotecon = mysqli_connect("db516200454.db.1and1.com", "dbo516200454", "Like\$amb6");
+	// $localcon = mysqli_connect("localhost", "bala", "balamurugan");
+	// if ($remotecon){
 	// 	echo 'connected remote';
 	// } else {
-	// 	mysql_connect("localhost", "bala", "balamurugan") or die ('local prob');
-	// 	echo 'connected local';
+	// 	if ($localcon){
+	// 		echo 'connected local';
+	// 	}
 	// }
 	
-	mysql_select_db("ktp")or die("database error");
+	echo (exec("ping -c 2 db516200454.db.1and1.com"));
+	
+	//mysqli_select_db("ktp")or die("database error");
 	// //Querying the database for authentication
 	// $sql="INSERT INTO `$table` (`name`,`org`,`role`,`invo`,`time`,`people`) VALUES ('$name','$org','$role','$invo','$time','$people')";
 	// //Execute the query and send the results back
@@ -32,5 +34,5 @@
 	// 	echo json_encode("Query Error - $sql");
 	// }
 	//Close the my SQL connection
-	mysql_close();
+	//mysqli_close();
 ?>
