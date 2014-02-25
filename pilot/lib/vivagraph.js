@@ -1546,15 +1546,15 @@ Viva.Graph.operations = function () {
          *
          * @returns density of the graph if graph has nodes. NaN otherwise
          */
-        density : function (graph,undirected) {
+        density : function (graph,directed) {
             var nodes = graph.getNodesCount();
             if (nodes === 0) {
                 return NaN;
             }
-            if(undirected){
-                return 2 * graph.getLinksCount() / (nodes * (nodes - 1));
-            } else {
+            if(directed){
                 return graph.getLinksCount() / (nodes * (nodes - 1));
+            } else {
+                return 2 * graph.getLinksCount() / (nodes * (nodes - 1));
             }
         }
     };

@@ -13,11 +13,9 @@
 	</head>
 	<body onresize="setMap();">
 		<nav class="navbar navbar-default navbar-static-top"></nav>
-		<div class="row" style="margin:0px;">
+		<div id="wrapper" class="row" style="margin:0px;">
 			<div id="visualisation" class="col-sm-9"></div>
-			<div id="analysis" class="col-sm-3 hidden-xs">
-				
-			</div>
+			<div id="analysis" class="col-sm-3 hidden-xs"></div>
 		</div>
 	</body>
 </html>
