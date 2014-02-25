@@ -1,7 +1,8 @@
 <?php
 	session_start();
+	$_SESSION['url']=$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 	if(isset($_SESSION['password'])){
-		header('location:vis.php');
+		header('location:./tracker/vis.php');
 	}
 ?>
 

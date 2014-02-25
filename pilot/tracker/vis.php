@@ -2,7 +2,7 @@
 	session_start();
 	$_SESSION['url']=$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 	if(!isset($_SESSION['password'])){
-		header("location:login.php");
+		header("location:../index.php");
 	}
 ?>
 
@@ -12,11 +12,11 @@
 		<title>Bank | Survey Tracker</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="./lib/bootstrap-yeti.css">
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-yeti.css">
 		<link rel="stylesheet" type="text/css" href="./vis.css">
-		<script type="text/javascript" src="./lib/jquery.js"></script>
-		<script type="text/javascript" src="./lib/bootstrap.js"></script>
-		<script type="text/javascript" src="./lib/vivagraph.js"></script>
+		<script type="text/javascript" src="../lib/jquery.js"></script>
+		<script type="text/javascript" src="../lib/bootstrap.js"></script>
+		<script type="text/javascript" src="../lib/vivagraph.js"></script>
 		<script type="text/javascript" src="./vis.js"></script>
 	</head>
 	<body>

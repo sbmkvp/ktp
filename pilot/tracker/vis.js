@@ -62,15 +62,15 @@ $(document).ready(function(){
 	});
 
 	//Getting the data and drawing the tracker.
-	$.getJSON('./lib/pull.php?table=bankcle',function(data1){ 
+	$.getJSON('../lib/pull.php?table=bankcle',function(data1){ 
 		$(data1).each(function(){this.people=$.parseJSON(this.people)});
 		bankcle = data1;
 		refreshTracker(bankcle);
-		$.getJSON('./lib/pull.php?table=banktsd',function(data2){
+		$.getJSON('../lib/pull.php?table=banktsd',function(data2){
 			$(data2).each(function(){this.people=$.parseJSON(this.people)});
 			banktsd = data2;
 			refreshTracker(banktsd);
-			$.getJSON('./lib/pull.php?table=banktp',function(data3){
+			$.getJSON('../lib/pull.php?table=banktp',function(data3){
 				$(data3).each(function(){this.people=$.parseJSON(this.people)});
 				banktp = data3;
 				refreshTracker(banktp);
@@ -92,7 +92,7 @@ function refreshTable() {
 	//var br = Number(((temp.length+1)/3).toFixed(0))+1;
 	var br = 15;
 	for (i in temp) {
-		var img = './images/'+tracker[i][1]+'.png';
+		var img = '../images/'+tracker[i][1]+'.png';
 		var percent = ((100/3)*tracker[i][1]).toFixed(0);
 		if(i<br){ $('#tbody1').append('<tr><td>'+tracker[i][0]+'</td><td><img src="'+img+'" style="max-height:15px;"> '+percent+'%</td></tr>'); }
 		if(i>(br-1) && i<(br*2)){ $('#tbody2').append('<tr><td>'+tracker[i][0]+'</td><td><img src="'+img+'" style="max-height:15px;"> '+percent+'%</td></tr>'); }
