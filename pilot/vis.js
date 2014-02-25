@@ -62,15 +62,15 @@ $(document).ready(function(){
 	});
 
 	//Getting the data and drawing the tracker.
-	$.getJSON('./lib/getdata.php?table=bankcle',function(data1){ 
+	$.getJSON('./lib/pull.php?table=bankcle',function(data1){ 
 		$(data1).each(function(){this.people=$.parseJSON(this.people)});
 		bankcle = data1;
 		refreshTracker(bankcle);
-		$.getJSON('./lib/getdata.php?table=banktsd',function(data2){
+		$.getJSON('./lib/pull.php?table=banktsd',function(data2){
 			$(data2).each(function(){this.people=$.parseJSON(this.people)});
 			banktsd = data2;
 			refreshTracker(banktsd);
-			$.getJSON('./lib/getdata.php?table=banktp',function(data3){
+			$.getJSON('./lib/pull.php?table=banktp',function(data3){
 				$(data3).each(function(){this.people=$.parseJSON(this.people)});
 				banktp = data3;
 				refreshTracker(banktp);
