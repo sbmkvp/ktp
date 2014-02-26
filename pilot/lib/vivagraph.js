@@ -1556,6 +1556,14 @@ Viva.Graph.operations = function () {
             } else {
                 return 2 * graph.getLinksCount() / (nodes * (nodes - 1));
             }
+        },
+
+        avgDegree : function (graph) {
+            var cumulative = 0;
+            graph.forEachNode(function(node){
+                cumulative += node.links.length;
+            });
+            return cumulative/graph.getNodesCount();
         }
     };
 };

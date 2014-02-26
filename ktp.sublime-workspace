@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"refine",
+				"refineData"
+			],
+			[
+				"phpmy",
+				"phpmyadmin"
+			],
+			[
+				"mysqli_conn",
+				"mysqli_connect"
+			],
+			[
+				"mysqli_co",
+				"mysqli_connect"
+			],
+			[
 				"mr",
 				"mrpv"
 			],
@@ -468,26 +484,26 @@
 	"buffers":
 	[
 		{
-			"file": "pilot/vis.php",
+			"file": "pilot/analysis/index.php",
 			"settings":
 			{
-				"buffer_size": 2310,
+				"buffer_size": 837,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pilot/vis.js",
+			"file": "pilot/analysis/index.js",
 			"settings":
 			{
-				"buffer_size": 6684,
+				"buffer_size": 3580,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pilot/vis.css",
+			"file": "pilot/analysis/index.css",
 			"settings":
 			{
-				"buffer_size": 394,
+				"buffer_size": 259,
 				"line_ending": "Windows"
 			}
 		}
@@ -520,9 +536,26 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/ktp/pilot/tracker/vis.js",
+		"/C/xampp/htdocs/ktp/pilot/lib/vivagraph.js",
+		"/C/xampp/htdocs/ktp/pilot/lib/login-check.php",
+		"/C/xampp/htdocs/ktp/pilot/index.php",
+		"/C/xampp/htdocs/ktp/pilot/tracker/vis.php",
+		"/C/xampp/htdocs/ktp/pilot/login.php",
+		"/C/xampp/htdocs/ktp/pilot/recycle/scripts.js",
+		"/C/xampp/htdocs/ktp/pilot/recycle/styles.css",
+		"/C/xampp/htdocs/ktp/pilot/recycle/vis.php",
+		"/C/xampp/htdocs/ktp/pilot/lib/dbconnect.php",
+		"/C/xampp/htdocs/ktp/pilot/lib/pull.php",
+		"/C/xampp/htdocs/ktp/pilot/lib/push.php",
+		"/C/xampp/htdocs/ktp/pilot/lib/dbconnect.pho",
+		"/C/xampp/htdocs/ktp/pilot/vis.js",
+		"/C/xampp/htdocs/ktp/pilot/vis.css",
+		"/C/xampp/htdocs/ktp/pilot/vis.php",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/xampp/phpmyadmin/config.inc.php",
 		"/C/xampp/htdocs/maps/server/db-login.php",
 		"/C/xampp/phpMyAdmin/version_check.php",
-		"/C/xampp/phpMyAdmin/config.inc.php",
 		"/C/xampp/htdocs/maps/server/getprojects.php",
 		"/C/xampp/htdocs/maps/server/getphotos.php",
 		"/C/xampp/htdocs/maps/server/getlvmfpv.php",
@@ -630,24 +663,7 @@
 		"/C/xampp/htdocs/HD-Maps/lib/php/getviews.php",
 		"/C/xampp/htdocs/HD-Maps/lib/php/getprojects.php",
 		"/C/xampp/htdocs/HD-Maps/lib/php/getlvmfap.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/getlvmfpv.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/delmap.php",
-		"/C/xampp/htdocs/HD-Maps/map-library/styles-lb.css",
-		"/C/xampp/htdocs/HD-Maps/lib/php/dupmap.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/dupmaps.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/opmaps.php",
-		"/C/xampp/htdocs/HD-Maps/lib/css/bootstrap.min.css",
-		"/C/Users/BalaMurugan/Dissertation/06 # Final Analysis & WriteUp/08  # Dual Algorithm/function.R",
-		"/C/Users/BalaMurugan/Desktop/vectorosm/0/0/0.js",
-		"/C/Users/BalaMurugan/Downloads/result.json",
-		"/C/xampp/htdocs/HD-Maps/lib/php/user-pass.php",
-		"/C/Users/BalaMurugan/Hayes Davidson/03 # Work Until Final/hd-old/dbman/js/functions.js",
-		"/C/Users/BalaMurugan/Desktop/example/index.html",
-		"/C/Users/BalaMurugan/Desktop/example/DT_bootstrap.js",
-		"/C/Users/BalaMurugan/Desktop/example/DT_bootstrap.css",
-		"/C/Users/BalaMurugan/Documents/GitHub/mobilecity/Game/First Map/map.js",
-		"/C/Users/BalaMurugan/Desktop/DataTables-1.9.4/media/js/jquery.dataTables.js",
-		"/C/Users/BalaMurugan/AppData/Local/Temp/Temp1_DataTables-1.9.4 (1).zip/DataTables-1.9.4/package.json"
+		"/C/xampp/htdocs/HD-Maps/lib/php/getlvmfpv.php"
 	],
 	"find":
 	{
@@ -665,6 +681,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"u",
+			"graph",
+			"image",
 			"pus",
 			";\n",
 			"var clpr",
@@ -789,10 +808,7 @@
 			");\n",
 			".results",
 			"pro",
-			".results",
-			"results",
-			"						<div class=\"form-group\">\n							<label for=\"name\">Password</label>\n							<input type=\"text\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">\n						</div>",
-			">\n"
+			".results"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -822,23 +838,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pilot/vis.php",
+					"file": "pilot/analysis/index.php",
 					"settings":
 					{
-						"buffer_size": 2310,
+						"buffer_size": 837,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								670,
+								670
 							]
 						],
 						"settings":
@@ -854,18 +870,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "pilot/vis.js",
+					"file": "pilot/analysis/index.js",
 					"settings":
 					{
-						"buffer_size": 6684,
+						"buffer_size": 3580,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								196,
-								196
+								731,
+								731
 							]
 						],
 						"settings":
@@ -881,23 +897,24 @@
 				},
 				{
 					"buffer": 2,
-					"file": "pilot/vis.css",
+					"file": "pilot/analysis/index.css",
 					"settings":
 					{
-						"buffer_size": 394,
+						"buffer_size": 259,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								259,
+								259
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -960,10 +977,10 @@
 		],
 		"width": 0.0
 	},
-	"show_minimap": true,
-	"show_open_files": false,
-	"show_tabs": true,
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": false,
 	"side_bar_visible": true,
-	"side_bar_width": 171.0,
+	"side_bar_width": 135.0,
 	"status_bar_visible": false
 }

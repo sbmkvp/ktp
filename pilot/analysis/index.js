@@ -20,6 +20,11 @@ $(document).ready(function(){
 		data = refine(x);
 		drawGraph();
 	});
+	//Setting the behaviour of the 
+	$('#layout').on('change',function(){ param.setLayout(this.value); });
+	$('#data').on('change',function(){ param.setData(this.value); });
+
+
 });
 
 function drawGraph() {
@@ -28,6 +33,8 @@ function drawGraph() {
 	if($('svg')[0]){$('svg').remove()}
 	renderer = new Viva.Graph.View.renderer(graph,{ layout : layout, container : document.getElementById('visualisation')});
 	renderer.run(); renderer.reset();
+	setAnalysis();
+	degdist();
 }
 
 function makeLayout() {
@@ -35,7 +42,7 @@ function makeLayout() {
 		layout = new Viva.Graph.Layout.constant(graph),
 			nodePositions = [],
 			n = graph.getNodesCount();
-		for (var i=0; i<n; i++) { nodePositions.push({ x:300*Math.cos(i*2*Math.PI/n), y:300*Math.sin(i*2*Math.PI/n) }); }
+		for (var i=0; i<n; i++) { nodePositions.push({ x:window.innerHeight*0.7/2*Math.cos(i*2*Math.PI/n), y:window.innerHeight*0.7/2*Math.sin(i*2*Math.PI/n) }); }
 		layout.placeNode(function(node) { return nodePositions[node.id]; });
 	} else if (param.layout == 'random'){
 		layout = new Viva.Graph.Layout.constant(graph),
@@ -109,4 +116,46 @@ function refine(unrefined) {
 		}
 	}
 	return refined;
+}
+
+function setAnalysis() {
+	$('#nodes').empty();$('#links').empty();$('#density').empty();$('#avgdeg').empty();
+	$('#nodes').append('<b>Number of Nodes : </b>'+graph.getNodesCount());
+	$('#links').append('<b>Number of Links : </b>'+graph.getLinksCount());
+	$('#density').append('<b>Density of the Graph : </b>'+Viva.Graph.operations().density(graph));
+	$('#avgdeg').append('<b>Average Degree : </b>'+Viva.Graph.operations().avgDegree(graph));
+}
+
+function degdist () {
+	$('#degreedist').highcharts({
+	    title: {
+	        text: 'Degree Distribution',
+	        x: -20 //center
+	    },
+	    xAxis: {
+	        categories: ['0','5','10','15','20','25','30','35','>35']
+	    },
+	    yAxis: {
+	        title: {
+	        	enabled: false,
+	            text: 'Degree'
+	        },
+	        plotLines: [{
+	            value: 0,
+	            width: 1,
+	            color: '#808080'
+	        }]
+	    },
+	    legend: {
+	    	enabled: false,
+	        layout: '',
+	        align: 'right',
+	        verticalAlign: 'middle',
+	        borderWidth: 0
+	    },
+	    series: [{
+	        name: 'Degree',
+	        data: [5,31,8,4,4,6,2,2,1]
+	    }]
+	});
 }
