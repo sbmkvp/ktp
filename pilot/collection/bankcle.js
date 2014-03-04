@@ -59,7 +59,7 @@ var data={
 		[''],
 		[''],
 		['']
-	],
+	]
 };
 
 //Setting the slider activation switch
@@ -147,29 +147,34 @@ $(document).ready(function(){
 	//Adding post behaviour to the submit button..
 	$('#submitbutton').click(function(){
 		$('#submitbutton').text('Wait...')
-		$.post('../lib/push.php',{
-			table:'bankcle',
-			name:data.info.name,
-			org:data.info.org,
-			role:data.info.role,
-			invo:data.info.invo,
-			time:data.info.time,
-			people:JSON.stringify(data.people)
-		}).done(function(data){
-			console.log(data);
-			if(data=='"success"'){
-				$('#submitbutton').removeClass('btn-primary');
-				$('#submitbutton').removeClass('btn-warning');
-				$('#submitbutton').addClass('btn-success');
-				$('#submitbutton').text('Succesfully Submitted')
-				setTimeout(function(){
-					location.reload();
-				},1500)
-			} else {
-				$('#submitbutton').removeClass('btn-primary');
-				$('#submitbutton').removeClass('btn-success');
-				$('#submitbutton').addClass('btn-warning');
-				$('#submitbutton').text('Error - Try Again');
+		$.ajax({
+			url: "../lib/push.php",
+			type: "POST",
+			cache: false,
+			data: ({ 
+				table:'bankcle',
+				name:data.info.name,
+				org:data.info.org,
+				role:data.info.role,
+				invo:data.info.invo,
+				time:data.info.time,
+				people:JSON.stringify(data.people)
+			}),
+			success: function(x){
+				if(x=='"success"'){
+					$('#submitbutton').removeClass('btn-primary');
+					$('#submitbutton').removeClass('btn-warning');
+					$('#submitbutton').addClass('btn-success');
+					$('#submitbutton').text('Succesfully Submitted')
+					setTimeout(function(){
+						location.reload();
+					},1500)
+				} else {
+					$('#submitbutton').removeClass('btn-primary');
+					$('#submitbutton').removeClass('btn-success');
+					$('#submitbutton').addClass('btn-warning');
+					$('#submitbutton').text('Error - Try Again');
+				}
 			}
 		});
 	});

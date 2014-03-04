@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Analysis</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-yeti.css">	
-		<script type="text/javascript" src="../lib/jquery.js"></script>
-		<script type="text/javascript" src="../lib/vivagraph.js"></script>
-		<script type="text/javascript" src="../lib/highcharts.js"></script>
-		<script type="text/javascript" src="../lib/exporting.js"></script>
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="index.js"></script>
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<script type="text/javascript" src="../lib/bootstrap.js"></script>
+		<style>
+html, body, svg {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display:block;
+}
+
+#visualisation {
+	height: 100%;
+	background-color: #ddd;
+}
+
+#analysis {
+	height: 100%;
+	background-color: #bbb;
+	overflow: auto;
+}
+
+#layout {
+	position: absolute;
+	float: left;
+	bottom: 10px;
+	left: 10px;
+	width: 200px;
+}
+</style>
 	</head>
-	<body onresize="setMap();">
-		<nav class="navbar navbar-default navbar-static-top">
-			<div class="navbar-brand pull-left" style="display:flex;">Analysis for Issue # 
-				<select id="data" class="form-control">
-					<option value="bankcle">Central Line Escalators</option>
-					<option value="banktsd">Track Support Design</option>
-					<option value="banktp">Transformer Protection and Relocation</option>
-				</select>
-			</div>
-		</nav>
+	<body>
 		<div id="wrapper" class="row" style="margin:0px;">
 			<div id="visualisation" class="col-sm-9">
 				<select id="layout" class="form-control">
@@ -39,6 +51,5 @@
 				<div id="degreedist" style="margin-top:15px;"></div>
 			</div>
 		</div>
-		<!-- <div id="degreedist" style="position:absolute; float:left; top:50px; left: 15px; min-width: 310px; height: 400px; margin: 0 auto"></div> -->
 	</body>
 </html>

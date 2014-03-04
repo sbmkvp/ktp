@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"grap",
+				"Graph"
+			],
+			[
+				"set",
+				"setLayout"
+			],
+			[
+				"bott",
+				"bottom"
+			],
+			[
 				"refine",
 				"refineData"
 			],
@@ -30,10 +42,6 @@
 			[
 				"pv",
 				"pvcheck"
-			],
-			[
-				"set",
-				"setVisible"
 			],
 			[
 				"slider",
@@ -487,7 +495,7 @@
 			"file": "pilot/analysis/index.php",
 			"settings":
 			{
-				"buffer_size": 837,
+				"buffer_size": 1451,
 				"line_ending": "Windows"
 			}
 		},
@@ -495,15 +503,23 @@
 			"file": "pilot/analysis/index.js",
 			"settings":
 			{
-				"buffer_size": 3580,
+				"buffer_size": 2303,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pilot/analysis/index.css",
+			"file": "pilot/old stuff/analysis/index.js",
 			"settings":
 			{
-				"buffer_size": 259,
+				"buffer_size": 4956,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pilot/old stuff/analysis/index.php",
+			"settings":
+			{
+				"buffer_size": 1983,
 				"line_ending": "Windows"
 			}
 		}
@@ -536,8 +552,25 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/ktp/pilot/tracker/vis.js",
+		"/C/xampp/htdocs/ktp/pilot/analysis/template.js",
+		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.php",
+		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.js",
+		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.css",
+		"/C/xampp/htdocs/ktp/pilot/analysis/index.js",
+		"/C/xampp/htdocs/ktp/pilot/analysis/index.css",
+		"/C/xampp/htdocs/ktp/pilot/analysis/index.php",
+		"/C/xampp/htdocs/ktp/pilot/collection/banktsd.php",
+		"/C/xampp/htdocs/ktp/pilot/collection/banktp.php",
+		"/C/xampp/htdocs/ktp/pilot/collection/bankcle.php",
+		"/C/xampp/htdocs/ktp/pilot/collection/bankcle.js",
+		"/C/xampp/htdocs/ktp/pilot/collection/banktp.js",
+		"/C/xampp/htdocs/ktp/pilot/collection/banktsd.js",
+		"/C/Users/BalaMurugan/AppData/Local/Temp/fz3temp-1/bankcle.js",
+		"/C/Users/BalaMurugan/AppData/Local/Temp/fz3temp-1/bankcle.php",
+		"/C/xampp/htdocs/ktp/pilot/collection/banktp.css",
+		"/C/xampp/htdocs/ktp/pilot/lib/bootstrap-yeti.css",
 		"/C/xampp/htdocs/ktp/pilot/lib/vivagraph.js",
+		"/C/xampp/htdocs/ktp/pilot/tracker/vis.js",
 		"/C/xampp/htdocs/ktp/pilot/lib/login-check.php",
 		"/C/xampp/htdocs/ktp/pilot/index.php",
 		"/C/xampp/htdocs/ktp/pilot/tracker/vis.php",
@@ -646,24 +679,7 @@
 		"/C/xampp/htdocs/maps/server/logout.php",
 		"/C/xampp/htdocs/maps/server/login.php",
 		"/C/xampp/htdocs/maps/landing.js",
-		"/C/xampp/htdocs/maps/landing.css",
-		"/C/xampp/htdocs/maps/index.html",
-		"/C/xampp/htdocs/maps/com/styles/bootstrap.min.yeti.css",
-		"/C/Users/BalaMurugan/Desktop/scrolltotop.html",
-		"/C/xampp/htdocs/maps/com/styles/bootstrap-theme.min.css",
-		"/C/Users/BalaMurugan/Desktop/Ghost/config.example.js",
-		"/C/xampp/htdocs/HD-Maps/map-viewer/index.html",
-		"/C/xampp/htdocs/HD-Maps/map-editor/map-mm.js",
-		"/C/xampp/htdocs/HD-Maps/map-editor/styles-mm.css",
-		"/C/xampp/htdocs/HD-Maps/map-editor/index.html",
-		"/C/Users/BalaMurugan/Desktop/Desktop/eh-14.nov/Assets/scripts/chooseImgCamScript.js",
-		"/C/Users/BalaMurugan/Desktop/Desktop/eh-14.nov/Assets/scripts/chooseRafImg.js",
-		"/C/xampp/htdocs/HD-Maps/db-manager/index.html",
-		"/C/xampp/htdocs/HD-Maps/lib/php/map.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/getviews.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/getprojects.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/getlvmfap.php",
-		"/C/xampp/htdocs/HD-Maps/lib/php/getlvmfpv.php"
+		"/C/xampp/htdocs/maps/landing.css"
 	],
 	"find":
 	{
@@ -671,7 +687,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 		]
@@ -681,6 +697,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"box-sizing",
+			"operations",
 			"u",
 			"graph",
 			"image",
@@ -806,8 +824,6 @@
 			"                    '\".addslashes($data[11]).\"',\n                    '\".addslashes($data[12]).\"',\n                    '\".addslashes($data[13]).\"',",
 			"class=\"sr-only\"",
 			");\n",
-			".results",
-			"pro",
 			".results"
 		],
 		"highlight": true,
@@ -838,7 +854,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -846,24 +862,24 @@
 					"file": "pilot/analysis/index.php",
 					"settings":
 					{
-						"buffer_size": 837,
+						"buffer_size": 1451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								670,
-								670
+								757,
+								757
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -873,15 +889,41 @@
 					"file": "pilot/analysis/index.js",
 					"settings":
 					{
-						"buffer_size": 3580,
+						"buffer_size": 2303,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								731,
-								731
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pilot/old stuff/analysis/index.js",
+					"settings":
+					{
+						"buffer_size": 4956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2347,
+								1355
 							]
 						],
 						"settings":
@@ -896,24 +938,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "pilot/analysis/index.css",
+					"buffer": 3,
+					"file": "pilot/old stuff/analysis/index.php",
 					"settings":
 					{
-						"buffer_size": 259,
+						"buffer_size": 1983,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								259,
-								259
+								1818,
+								747
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -981,6 +1023,6 @@
 	"show_open_files": true,
 	"show_tabs": false,
 	"side_bar_visible": true,
-	"side_bar_width": 135.0,
+	"side_bar_width": 114.0,
 	"status_bar_visible": false
 }

@@ -5,12 +5,14 @@
 		<!-- Importing libraries -->
 		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-yeti.css">
 		<link rel="stylesheet" type="text/css" href="../lib/slider.css">
+		<script type="text/javascript" src="../lib/json3.min.js"></script>
 		<script type="text/javascript" src="../lib/jquery.js"></script>
 		<script type="text/javascript" src="../lib/bootstrap.js"></script>
 		<script type="text/javascript" src="../lib/slider.js"></script>
 		<!-- Specific styles and scripts -->
 		<link rel="stylesheet" type="text/css" href="./bankcle.css">
 		<script type="text/javascript" src="./bankcle.js"></script>
+		<!--[if IE ]><link href="../lib/bootstrap-ie7.css" rel="stylesheet"><![endif]-->
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -112,5 +114,3 @@
 		</div>
 	</body>
 </html>
-
-	
