@@ -13,39 +13,48 @@ var	param = {
 	theta : 0.8,
 	dragCoeff : 0.05,
 	data : 'bankcle',
-	width : [9,3],
+	width : 8,
 	//Methods associated with the object
 	setLayout : function (x) {
-		this.layout=x;
+		this.layout = x;
 		drawGraph();
 	},
 	setSplength : function (x) {
-		this.springLength=x;
+		this.springLength = x;
 		drawGraph();
 	},
 	setSpcoeff : function (x) {
-		this.springCoeff=x;
+		this.springCoeff = x;
 		drawGraph();
 	},
 	setGravity : function (x) {
-		this.gravity=x;
+		this.gravity = x;
 		drawGraph(); },
 	setTheta : function (x) {
-		this.theta=x;
+		this.theta = x;
 		drawGraph(); },
 	setDgcoeff : function (x) {
-		this.dragCoeff=x;
+		this.dragCoeff = x;
 		drawGraph();
 	},
 	setDirected : function (x) {
-		this.directed=x;
+		this.directed = x;
 		drawGraph();
 	},
 	setData : function(x) {
-		this.data=x;
+		this.data = x;
 		$.getJSON('../lib/pull.php?table='+param.data,function(x){
 			data = refine(x); drawGraph();
 		});
+	},
+	setWidth: function(x) {
+		if(x>0 && x<12) {
+			this.width = x;
+			$('#visualisation').removeClass($('#visualisation').attr('class'));
+			$('#visualisation').addClass('col-sm-'+this.width);
+			$('#analysis').removeClass($('#analysis').attr('class'));
+			$('#analysis').addClass('col-sm-'+(12-this.width));
+		}
 	}
 }
 
@@ -60,7 +69,7 @@ var layoutMaker = {
 	layouts : {
 		circle: function(){
 			layout = new Viva.Graph.Layout.constant(graph),
-				nodePositions = [],
+				nodePositions = [];
 			for (var i=0; i<graph.getNodesCount(); i++) {
 				nodePositions.push({
 					x:window.innerHeight*0.7/2*Math.cos(i*2*Math.PI/n),
@@ -73,7 +82,7 @@ var layoutMaker = {
 		},
 		random: function(){ 
 			layout = new Viva.Graph.Layout.constant(graph),
-				nodePositions = [],
+				nodePositions = [];
 			for (var i=0; i<graph.getNodesCount(); i++) {
 				nodePositions.push({
 					x:0.7*window.innerHeight*Math.random(),

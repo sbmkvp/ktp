@@ -1,0 +1,54 @@
+html, body, svg {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display:block;
+}
+
+#visualisation {
+	height: 100%;
+	background-color: #ddd;
+}
+
+#analysis {
+	height: 100%;
+	background-color: #bbb;
+	overflow: auto;
+}
+
+#layout {
+	position: absolute;
+	float: left;
+	bottom: 10px;
+	left: 10px;
+	width: 200px;
+	padding: 2px 4px;
+	height:26px;
+	background-color: #ddd;
+}
+
+#wrapper {
+	height:100%;
+	margin:0px;
+}
+
+#width-left {
+	position: absolute;
+	float:right;
+	top:5px;
+	right:1px;
+	font-size: medium;
+	color: #bbb;
+	cursor: pointer;
+}
+
+#width-right {
+	position: absolute;
+	float:left;
+	top:5px;
+	left:1px;
+	font-size: medium;
+	color: #ddd;
+	cursor: pointer;
+}

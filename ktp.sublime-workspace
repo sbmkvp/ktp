@@ -495,7 +495,7 @@
 			"file": "pilot/analysis/index.php",
 			"settings":
 			{
-				"buffer_size": 1451,
+				"buffer_size": 1528,
 				"line_ending": "Windows"
 			}
 		},
@@ -503,23 +503,15 @@
 			"file": "pilot/analysis/index.js",
 			"settings":
 			{
-				"buffer_size": 2303,
+				"buffer_size": 2629,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pilot/old stuff/analysis/index.js",
+			"file": "pilot/analysis/index.css",
 			"settings":
 			{
-				"buffer_size": 4956,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pilot/old stuff/analysis/index.php",
-			"settings":
-			{
-				"buffer_size": 1983,
+				"buffer_size": 666,
 				"line_ending": "Windows"
 			}
 		}
@@ -552,9 +544,9 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/ktp/pilot/analysis/template.js",
-		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.php",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.js",
+		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.php",
+		"/C/xampp/htdocs/ktp/pilot/analysis/template.js",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.css",
 		"/C/xampp/htdocs/ktp/pilot/analysis/index.js",
 		"/C/xampp/htdocs/ktp/pilot/analysis/index.css",
@@ -687,7 +679,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -862,73 +854,21 @@
 					"file": "pilot/analysis/index.php",
 					"settings":
 					{
-						"buffer_size": 1451,
+						"buffer_size": 1528,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								757,
-								757
+								1087,
+								1087
 							]
 						],
 						"settings":
 						{
 							"auto_name": "",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "pilot/analysis/index.js",
-					"settings":
-					{
-						"buffer_size": 2303,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								347,
-								347
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pilot/old stuff/analysis/index.js",
-					"settings":
-					{
-						"buffer_size": 4956,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2347,
-								1355
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -938,24 +878,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "pilot/old stuff/analysis/index.php",
+					"buffer": 1,
+					"file": "pilot/analysis/index.js",
 					"settings":
 					{
-						"buffer_size": 1983,
+						"buffer_size": 2629,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1818,
-								747
+								1933,
+								1933
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 128.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pilot/analysis/index.css",
+					"settings":
+					{
+						"buffer_size": 666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								372,
+								372
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1023,6 +990,6 @@
 	"show_open_files": true,
 	"show_tabs": false,
 	"side_bar_visible": true,
-	"side_bar_width": 114.0,
+	"side_bar_width": 165.0,
 	"status_bar_visible": false
 }
