@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"td",
+				"td	Tag"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"border-top",
+				"border-top-color"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"toNo",
+				"toNodeId"
+			],
+			[
+				"from",
+				"fromNode"
+			],
+			[
+				"gr",
+				"graph"
+			],
+			[
 				"grap",
 				"Graph"
 			],
@@ -52,10 +112,6 @@
 				"config"
 			],
 			[
-				"margin",
-				"margin-right"
-			],
-			[
 				"lvm",
 				"lvmf-container"
 			],
@@ -70,10 +126,6 @@
 			[
 				"map",
 				"mapkey"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"c",
@@ -122,14 +174,6 @@
 			[
 				"t",
 				"th	Tag"
-			],
-			[
-				"th",
-				"thead	Tag"
-			],
-			[
-				"padding",
-				"padding-top"
 			],
 			[
 				"drawlv",
@@ -320,10 +364,6 @@
 				"password"
 			],
 			[
-				"in",
-				"input	Tag"
-			],
-			[
 				"navbar",
 				"navbar-brand"
 			],
@@ -354,10 +394,6 @@
 			[
 				"oT",
 				"oTable"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"dataTa",
@@ -478,40 +514,34 @@
 			[
 				"po",
 				"position"
-			],
-			[
-				"va",
-				"value"
-			],
-			[
-				"l",
-				"l"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "pilot/analysis/index.php",
+			"file": "pilot/final/index.php",
 			"settings":
 			{
-				"buffer_size": 1528,
-				"line_ending": "Windows"
+				"buffer_size": 1282,
+				"line_ending": "Windows",
+				"name": "index.php"
 			}
 		},
 		{
-			"file": "pilot/analysis/index.js",
+			"file": "pilot/final/index.js",
 			"settings":
 			{
-				"buffer_size": 2629,
-				"line_ending": "Windows"
+				"buffer_size": 647,
+				"line_ending": "Windows",
+				"name": "index.js"
 			}
 		},
 		{
-			"file": "pilot/analysis/index.css",
+			"file": "pilot/final/index.css",
 			"settings":
 			{
-				"buffer_size": 666,
+				"buffer_size": 12561,
 				"line_ending": "Windows"
 			}
 		}
@@ -523,11 +553,67 @@
 		"selected_items":
 		[
 			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"tid",
+				"Tidy CSS (Low Compression)"
+			],
+			[
+				"tidy",
+				"Tidy CSS"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"subli",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"sublimer",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
 				"pak",
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 416.0
+		"width": 408.0
 	},
 	"console":
 	{
@@ -544,13 +630,29 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/ktp/pilot/final/highcharts.js",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.js",
+		"/C/Users/BalaMurugan/AppData/Local/Temp/Temp1_Highcharts-3.0.9.zip/js/highcharts-all.js",
+		"/C/xampp/htdocs/ktp/pilot/lib/bootstrap-yeti.css",
+		"/C/xampp/htdocs/ktp/pilot/lib/bootstrap.js",
+		"/C/Users/BalaMurugan/AppData/Local/Temp/Temp1_bootstrap (2).zip/css/bootstrap.css",
+		"/C/xampp/htdocs/ktp/pilot/final/index.less",
+		"/C/xampp/htdocs/ktp/pilot/final/index.css",
+		"/C/xampp/htdocs/ktp/pilot/final/bootstrap.min.css",
+		"/C/xampp/htdocs/ktp/pilot/final/bootstrap-yeti.css",
+		"/C/xampp/htdocs/ktp/pilot/final/bootstrap.min.js",
+		"/C/xampp/htdocs/ktp/pilot/viva/vivagraph.js",
+		"/C/xampp/htdocs/ktp/pilot/analysis/index.css",
+		"/C/xampp/htdocs/ktp/pilot/analysis/index.js",
+		"/C/xampp/htdocs/ktp/pilot/analysis/index.php",
+		"/C/xampp/htdocs/ktp/pilot/viva/viva.js",
+		"/C/xampp/htdocs/ktp/pilot/lib/vivagraph.js",
+		"/C/xampp/htdocs/ktp/pilot/analysis/viva.js",
+		"/C/Users/BalaMurugan/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/BalaMurugan/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.php",
 		"/C/xampp/htdocs/ktp/pilot/analysis/template.js",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.css",
-		"/C/xampp/htdocs/ktp/pilot/analysis/index.js",
-		"/C/xampp/htdocs/ktp/pilot/analysis/index.css",
-		"/C/xampp/htdocs/ktp/pilot/analysis/index.php",
 		"/C/xampp/htdocs/ktp/pilot/collection/banktsd.php",
 		"/C/xampp/htdocs/ktp/pilot/collection/banktp.php",
 		"/C/xampp/htdocs/ktp/pilot/collection/bankcle.php",
@@ -560,8 +662,6 @@
 		"/C/Users/BalaMurugan/AppData/Local/Temp/fz3temp-1/bankcle.js",
 		"/C/Users/BalaMurugan/AppData/Local/Temp/fz3temp-1/bankcle.php",
 		"/C/xampp/htdocs/ktp/pilot/collection/banktp.css",
-		"/C/xampp/htdocs/ktp/pilot/lib/bootstrap-yeti.css",
-		"/C/xampp/htdocs/ktp/pilot/lib/vivagraph.js",
 		"/C/xampp/htdocs/ktp/pilot/tracker/vis.js",
 		"/C/xampp/htdocs/ktp/pilot/lib/login-check.php",
 		"/C/xampp/htdocs/ktp/pilot/index.php",
@@ -657,21 +757,7 @@
 		"/C/xampp/htdocs/maps/server/addproject",
 		"/C/xampp/htdocs/maps/css/index.css",
 		"/C/Users/BalaMurugan/Hayes Davidson/03 # Work Until Final/hd-old/viz/maps/Index.php",
-		"/C/xampp/htdocs/maps/index.js",
-		"/C/xampp/htdocs/maps/index.css",
-		"/C/xampp/htdocs/maps/server/duplicatemap.php",
-		"/C/xampp/htdocs/HD-Maps/map-library/map-lb.js",
-		"/C/xampp/htdocs/HD-Maps/map-library/index.html",
-		"/C/xampp/htdocs/HD-Maps/lib/js/jsontotable.js",
-		"/C/xampp/htdocs/HD-Maps/lib/php/getmaps.php",
-		"/C/xampp/htdocs/maps/styles/bootstrap.min.yeti.css",
-		"/C/Users/BalaMurugan/Downloads/aosm.r",
-		"/C/xampp/htdocs/maps/login.js",
-		"/C/xampp/htdocs/maps/login.css",
-		"/C/xampp/htdocs/maps/server/logout.php",
-		"/C/xampp/htdocs/maps/server/login.php",
-		"/C/xampp/htdocs/maps/landing.js",
-		"/C/xampp/htdocs/maps/landing.css"
+		"/C/xampp/htdocs/maps/index.js"
 	],
 	"find":
 	{
@@ -689,6 +775,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"highcharts.com",
+			"CSSTableGenerator",
+			"pull-right",
+			"100",
+			"5px",
+			"../fonts",
+			"fonts",
+			"/fonts",
+			"Viva.Graph.graph",
+			"Vive.Graph.graph",
+			"id",
+			"forcedire",
+			"nodeBodies",
+			"force_directed_body",
+			"physics.bo",
+			"the",
+			"{\n",
+			"mass",
+			"operations",
 			"box-sizing",
 			"operations",
 			"u",
@@ -797,26 +902,7 @@
 			"span",
 			"collapse",
 			"fonts",
-			"fon",
-			"fo",
-			"font",
-			"fonts",
-			"usa",
-			"mumbai",
-			"london",
-			"socket.io",
-			"\n",
-			"_REQUEST",
-			";\n",
-			"animate",
-			"target",
-			"stats",
-			"params",
-			"lpv",
-			"                    '\".addslashes($data[11]).\"',\n                    '\".addslashes($data[12]).\"',\n                    '\".addslashes($data[13]).\"',",
-			"class=\"sr-only\"",
-			");\n",
-			".results"
+			"fon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -824,6 +910,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"property-table",
+			"./fonts",
 			"=",
 			"-e",
 			"",
@@ -851,25 +939,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "pilot/analysis/index.php",
+					"file": "pilot/final/index.php",
 					"settings":
 					{
-						"buffer_size": 1528,
+						"buffer_size": 1282,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1087,
-								1087
+								1055,
+								1055
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
+							"auto_name": "index.php",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -879,45 +967,45 @@
 				},
 				{
 					"buffer": 1,
-					"file": "pilot/analysis/index.js",
+					"file": "pilot/final/index.js",
 					"settings":
 					{
-						"buffer_size": 2629,
+						"buffer_size": 647,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1933,
-								1933
+								261,
+								266
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "index.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 128.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "pilot/analysis/index.css",
+					"file": "pilot/final/index.css",
 					"settings":
 					{
-						"buffer_size": 666,
+						"buffer_size": 12561,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								372,
-								372
+								967,
+								967
 							]
 						],
 						"settings":
@@ -926,7 +1014,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 625.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

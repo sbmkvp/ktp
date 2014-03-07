@@ -8,7 +8,7 @@ Viva.Graph = Viva.Graph || {};
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = Viva;
 }
-Viva.Graph.version = '0.5.3';
+Viva.Graph.version = '0.5.4';
 
 /** 
  * Extends target object with given fields/values in the options object.
@@ -97,6 +97,7 @@ Viva.random = function () {
  * @param random - a [seeded] random number generator to produce same sequences. This parameter
  * is optional. If you don't need determenistic randomness keep it blank.
  */
+
 Viva.randomIterator = function (array, random) {
     random = random || Viva.random();
 
@@ -159,6 +160,7 @@ Viva.BrowserInfo = (function () {
         version: match[2] || "0"
     };
 }());
+
 /**
  * @author Andrei Kashcha (aka anvaka) / http://anvaka.blogspot.com
  */
@@ -181,6 +183,7 @@ Viva.Graph.Utils.indexOfElementInArray = function (element, array) {
 
     return -1;
 };
+
 Viva.Graph.Utils = Viva.Graph.Utils || {};
 
 Viva.Graph.Utils.getDimension = function (container) {
@@ -205,6 +208,7 @@ Viva.Graph.Utils.getDimension = function (container) {
 /**
  * Finds the absolute position of an element on a page
  */
+
 Viva.Graph.Utils.findElementPosition = function (obj) {
     var curleft = 0,
         curtop = 0;
@@ -216,7 +220,9 @@ Viva.Graph.Utils.findElementPosition = function (obj) {
     }
 
     return [curleft, curtop];
-};/**
+};
+
+/**
  * @author Andrei Kashcha (aka anvaka) / http://anvaka.blogspot.com
  */
 
@@ -330,6 +336,7 @@ Viva.Graph.Utils.events = function (element) {
     };
 
     return {
+
         /**
          * Registes callback to be called when element fires event with given event name.
          */
@@ -364,7 +371,9 @@ Viva.Graph.Utils.events = function (element) {
             return eventuality(element);
         }
     };
-};/**
+};
+
+/**
  * @author Andrei Kashcha (aka anvaka) / http://anvaka.blogspot.com
  */
 
@@ -643,6 +652,7 @@ Viva.Graph.Utils.dragndrop = function (element) {
         }
     };
 };
+
 /**
  * @author Andrei Kashcha (aka anvaka) / http://anvaka.blogspot.com
  */
@@ -1389,6 +1399,7 @@ Viva.Graph.graph = function () {
  */
 
 Viva.Graph.operations = function () {
+
     return {
         /**
          * Gets graph density, which is a ratio of actual number of edges to maximum
@@ -1399,20 +1410,16 @@ Viva.Graph.operations = function () {
          * 
          * @returns density of the graph if graph has nodes. NaN otherwise 
          */
-        density : function (graph,directed) {
+        density : function (graph) {
             var nodes = graph.getNodesCount();
             if (nodes === 0) {
                 return NaN;
             }
-            if(directed){
-              return graph.getLinksCount() / (nodes * (nodes - 1));
-            } else {
-              return 2 * graph.getLinksCount() / (nodes * (nodes - 1));
-            }   
+
+            return 2 * graph.getLinksCount() / (nodes * (nodes - 1));
         }
     };
 };
-
 Viva.Graph.Physics = Viva.Graph.Physics || {};
 
 Viva.Graph.Physics.Vector = function (x, y) {
@@ -1528,12 +1535,11 @@ Viva.Graph.Physics.eulerIntegrator = function () {
                 body.location.x += tx;
                 body.location.y += ty;
             }
+
             return tx * tx + ty * ty;
         }
     };
 };
-
-
 /**
  * This is Barnes Hut simulation algorithm. Implementation
  * is adopted to non-recursive solution, since certain browsers
@@ -2098,8 +2104,6 @@ Viva.Graph.Physics.forceSimulator = function (forceIntegrator) {
 
 Viva.Graph.Layout = Viva.Graph.Layout || {};
 Viva.Graph.Layout.forceDirected = function(graph, settings) {
-    var STABLE_THRESHOLD = 0.001; // Maximum movement of the system which can be considered as stabilized
-
     if (!graph) {
         throw {
             message: 'Graph structure cannot be undefined'
@@ -2170,7 +2174,12 @@ Viva.Graph.Layout.forceDirected = function(graph, settings) {
         /**
          * Default time step (dt) for forces integration
          */
-        timeStep : 20
+        timeStep : 20,
+
+        /**
+         * Maximum movement of the system which can be considered as stabilized
+         */
+        stableThreshold: 0.001
     });
 
     var forceSimulator = Viva.Graph.Physics.forceSimulator(Viva.Graph.Physics.eulerIntegrator()),
@@ -2379,6 +2388,8 @@ Viva.Graph.Layout.forceDirected = function(graph, settings) {
     forceSimulator.setDragForce(dragForce);
 
     initSimulator();
+    graph.forEachNode(function(node){node.body=nodeBodies[node.id];});
+    graph.forEachLink(function(link){link.spring=springs[link.id]});
 
     return {
         /**
@@ -2395,11 +2406,6 @@ Viva.Graph.Layout.forceDirected = function(graph, settings) {
             }
         },
 
-        gb: function (nodeId) {
-            return nodeBodies[nodeId];
-        },
-
-        gs: function ()
         /**
          * Performs one step of iterative layout algorithm
          */
@@ -2407,7 +2413,7 @@ Viva.Graph.Layout.forceDirected = function(graph, settings) {
             var energy = forceSimulator.run(settings.timeStep);
             updateNodePositions();
 
-            return energy < STABLE_THRESHOLD;
+            return energy < settings.stableThreshold;
         },
 
         /*
@@ -3656,7 +3662,6 @@ Viva.Graph._community.slpaAlgorithm = function (graph, T, r) {
  * TODO: currently this structure is extremely inefficient in terms of memory. I think it could be
  * optimized.
  */
-
 Viva.Graph._community.occuranceMap = function (random) {
     random = random || Viva.random();
 
@@ -5860,7 +5865,12 @@ Viva.Graph.View.webglGraphics = function (options) {
         height,
         nodesCount = 0,
         linksCount = 0,
-        transform,
+        transform = [
+            1, 0, 0, 0,
+            0, 1, 0, 0,
+            0, 0, 1, 0,
+            0, 0, 0, 1
+        ],
         userPlaceNodeCallback,
         userPlaceLinkCallback,
         nodes = [],
@@ -6015,7 +6025,9 @@ Viva.Graph.View.webglGraphics = function (options) {
          * Sets translate operation that should be applied to all nodes and links.
          */
         graphCenterChanged : function (x, y) {
-            updateSize();
+            transform[12] = (2 * x / width) - 1;
+            transform[13] = 1 - (2 * y / height);
+            updateTransformUniform();
         },
 
         /**
