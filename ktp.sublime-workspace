@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"border",
+				"borderWidth"
+			],
+			[
 				"bacl",
 				"background-color"
 			],
@@ -510,38 +514,33 @@
 			[
 				"marker",
 				"markerCluster"
-			],
-			[
-				"po",
-				"position"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "pilot/final/index.php",
+			"file": "pilot/final/index.html",
 			"settings":
 			{
-				"buffer_size": 1282,
-				"line_ending": "Windows",
-				"name": "index.php"
-			}
-		},
-		{
-			"file": "pilot/final/index.js",
-			"settings":
-			{
-				"buffer_size": 647,
-				"line_ending": "Windows",
-				"name": "index.js"
+				"buffer_size": 1837,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "pilot/final/index.css",
 			"settings":
 			{
-				"buffer_size": 12561,
+				"buffer_size": 1542,
+				"line_ending": "Windows",
+				"name": "index.css"
+			}
+		},
+		{
+			"file": "pilot/final/index.js",
+			"settings":
+			{
+				"buffer_size": 1302,
 				"line_ending": "Windows"
 			}
 		}
@@ -630,6 +629,14 @@
 	},
 	"file_history":
 	[
+		"/C/Users/BalaMurugan/KTP Documents/KTP Presentation/Data and Analysis/Matrices/Function.R",
+		"/C/xampp/htdocs/ktp/pilot/old stuff/final/index.js",
+		"/C/xampp/htdocs/ktp/pilot/old stuff/final/index.css",
+		"/C/xampp/htdocs/ktp/pilot/old stuff/final/index.php",
+		"/C/xampp/htdocs/ktp/pilot/final/index.css",
+		"/C/xampp/htdocs/ktp/pilot/final/index.js",
+		"/C/xampp/htdocs/ktp/pilot/final/index.php",
+		"/C/Users/BalaMurugan/AppData/Local/Temp/Temp1_bootstrap (3).zip/css/bootstrap.css",
 		"/C/xampp/htdocs/ktp/pilot/final/highcharts.js",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/analysis/index.js",
 		"/C/Users/BalaMurugan/AppData/Local/Temp/Temp1_Highcharts-3.0.9.zip/js/highcharts-all.js",
@@ -637,7 +644,6 @@
 		"/C/xampp/htdocs/ktp/pilot/lib/bootstrap.js",
 		"/C/Users/BalaMurugan/AppData/Local/Temp/Temp1_bootstrap (2).zip/css/bootstrap.css",
 		"/C/xampp/htdocs/ktp/pilot/final/index.less",
-		"/C/xampp/htdocs/ktp/pilot/final/index.css",
 		"/C/xampp/htdocs/ktp/pilot/final/bootstrap.min.css",
 		"/C/xampp/htdocs/ktp/pilot/final/bootstrap-yeti.css",
 		"/C/xampp/htdocs/ktp/pilot/final/bootstrap.min.js",
@@ -718,7 +724,6 @@
 		"/C/Users/BalaMurugan/Desktop/names.tab",
 		"/C/Users/BalaMurugan/Desktop/tp.tab",
 		"/C/Users/BalaMurugan/KTP Documents/KTP Presentation/Data and Analysis/Matrices/lables.tab",
-		"/C/Users/BalaMurugan/KTP Documents/KTP Presentation/Data and Analysis/Matrices/Function.R",
 		"/C/Users/BalaMurugan/KTP Documents/KTP Presentation/Data and Analysis/Matrices/issue1.tab",
 		"/C/xampp/htdocs/maps/server/uppr.php",
 		"/C/xampp/htdocs/maps/server/upph.php",
@@ -751,13 +756,7 @@
 		"/C/xampp/htdocs/maps/css/photos.css",
 		"/C/xampp/htdocs/maps/server/editproject.php",
 		"/C/xampp/htdocs/maps/server/addproject.php",
-		"/C/xampp/htdocs/maps/css/projects.css",
-		"/C/xampp/htdocs/maps/server/deleteproject.php",
-		"/C/xampp/htdocs/maps/server/deletemap.php",
-		"/C/xampp/htdocs/maps/server/addproject",
-		"/C/xampp/htdocs/maps/css/index.css",
-		"/C/Users/BalaMurugan/Hayes Davidson/03 # Work Until Final/hd-old/viz/maps/Index.php",
-		"/C/xampp/htdocs/maps/index.js"
+		"/C/xampp/htdocs/maps/css/projects.css"
 	],
 	"find":
 	{
@@ -765,7 +764,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 		]
@@ -934,28 +933,27 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pilot/final/index.php",
+					"file": "pilot/final/index.html",
 					"settings":
 					{
-						"buffer_size": 1282,
+						"buffer_size": 1837,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1055,
-								1055
+								534,
+								534
 							]
 						],
 						"settings":
 						{
-							"auto_name": "index.php",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"word_wrap": false
 						},
@@ -967,54 +965,54 @@
 				},
 				{
 					"buffer": 1,
-					"file": "pilot/final/index.js",
+					"file": "pilot/final/index.css",
 					"settings":
 					{
-						"buffer_size": 647,
+						"buffer_size": 1542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								261,
-								266
+								401,
+								401
 							]
 						],
 						"settings":
 						{
-							"auto_name": "index.js",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"auto_name": "index.css",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 448.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "pilot/final/index.css",
+					"file": "pilot/final/index.js",
 					"settings":
 					{
-						"buffer_size": 12561,
+						"buffer_size": 1302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								967,
-								967
+								256,
+								256
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 625.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1078,6 +1076,6 @@
 	"show_open_files": true,
 	"show_tabs": false,
 	"side_bar_visible": true,
-	"side_bar_width": 165.0,
+	"side_bar_width": 192.0,
 	"status_bar_visible": false
 }
