@@ -543,6 +543,14 @@
 				"buffer_size": 1302,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "/C/Users/BalaMurugan/Downloads/index.php",
+			"settings":
+			{
+				"buffer_size": 6522,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -629,6 +637,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/BalaMurugan/Downloads/data.txt",
+		"/C/Users/BalaMurugan/Downloads/data.csv",
 		"/C/Users/BalaMurugan/KTP Documents/KTP Presentation/Data and Analysis/Matrices/Function.R",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/final/index.js",
 		"/C/xampp/htdocs/ktp/pilot/old stuff/final/index.css",
@@ -754,9 +764,7 @@
 		"/C/Users/BalaMurugan/Desktop/google.csv",
 		"/C/xampp/htdocs/maps/server/deletephoto.php",
 		"/C/xampp/htdocs/maps/css/photos.css",
-		"/C/xampp/htdocs/maps/server/editproject.php",
-		"/C/xampp/htdocs/maps/server/addproject.php",
-		"/C/xampp/htdocs/maps/css/projects.css"
+		"/C/xampp/htdocs/maps/server/editproject.php"
 	],
 	"find":
 	{
@@ -764,7 +772,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -933,7 +941,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -955,6 +963,7 @@
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
@@ -982,7 +991,8 @@
 						"settings":
 						{
 							"auto_name": "index.css",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 448.0,
@@ -1002,13 +1012,40 @@
 						"selection":
 						[
 							[
-								256,
-								256
+								229,
+								229
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/BalaMurugan/Downloads/index.php",
+					"settings":
+					{
+						"buffer_size": 6522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
