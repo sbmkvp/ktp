@@ -1384,6 +1384,15 @@ Viva.Graph.graph = function () {
             }
 
             return null; // no link.
+        },
+
+        getDegree : function() {
+            var degree = [];
+            this.forEachNode(function(node){
+                degree.push(node.links.length);
+            });
+
+            return degree;
         }
     };
 
@@ -1415,8 +1424,22 @@ Viva.Graph.operations = function () {
             if (nodes === 0) {
                 return NaN;
             }
-
-            return 2 * graph.getLinksCount() / (nodes * (nodes - 1));
+            return graph.getLinksCount() / (nodes * (nodes - 1));
+        },
+        /**
+         * Gets average degree of the graph, which is the average of all degrees of nodes in the graph
+         * 
+         * @param graph represents oriented graph structure.
+         * 
+         * @returns average degree of the graph if graph has nodes. NaN otherwise 
+         */
+        avgDegree : function(graph) {
+            var nodes = graph.getNodesCount();
+            var links = graph.getLinksCount();
+            if (nodes === 0) {
+                return NaN;
+            }
+            return 2 * links/nodes
         }
     };
 };

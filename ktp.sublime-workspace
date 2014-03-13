@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"grap",
+				"graph"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"bor",
+				"borderColor"
+			],
+			[
+				"forea",
+				"forEachNode"
+			],
+			[
+				"toggle",
+				"slideToggle"
+			],
+			[
+				"table",
+				"tablebody"
+			],
+			[
+				"ta",
+				"tablebody"
+			],
+			[
+				"h",
+				"hdn"
+			],
+			[
 				"border",
 				"borderWidth"
 			],
@@ -40,10 +72,6 @@
 				"border-top-color"
 			],
 			[
-				"bor",
-				"border-color"
-			],
-			[
 				"padding",
 				"padding"
 			],
@@ -66,10 +94,6 @@
 			[
 				"gr",
 				"graph"
-			],
-			[
-				"grap",
-				"Graph"
 			],
 			[
 				"set",
@@ -336,10 +360,6 @@
 				"refreshTable"
 			],
 			[
-				"table",
-				"table-content"
-			],
-			[
 				"ne",
 				"newdesc"
 			],
@@ -494,26 +514,6 @@
 			[
 				"w",
 				"write"
-			],
-			[
-				"heig",
-				"height"
-			],
-			[
-				"height",
-				"min-height"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"ba",
-				"background-color"
-			],
-			[
-				"marker",
-				"markerCluster"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "pilot/final/index.html",
 			"settings":
 			{
-				"buffer_size": 1837,
+				"buffer_size": 1225,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "pilot/final/index.css",
 			"settings":
 			{
-				"buffer_size": 1542,
+				"buffer_size": 1556,
 				"line_ending": "Windows",
 				"name": "index.css"
 			}
@@ -540,16 +540,33 @@
 			"file": "pilot/final/index.js",
 			"settings":
 			{
-				"buffer_size": 1302,
+				"buffer_size": 2569,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/BalaMurugan/Downloads/index.php",
+			"file": "pilot/final/lib/ch-styles.js",
 			"settings":
 			{
-				"buffer_size": 6522,
+				"buffer_size": 1135,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pilot/final/lib/vivagraph.js",
+			"settings":
+			{
+				"buffer_size": 224656,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pilot/final/lib/utils.js",
+			"settings":
+			{
+				"buffer_size": 4452,
+				"line_ending": "Windows",
+				"name": "Utilities.js"
 			}
 		}
 	],
@@ -637,6 +654,10 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/ktp/pilot/lib/login-check.php",
+		"/C/xampp/htdocs/ktp/pilot/index.php",
+		"/C/xampp/htdocs/ktp/pilot/tracker/vis.php",
+		"/C/Users/BalaMurugan/Downloads/index.php",
 		"/C/Users/BalaMurugan/Downloads/data.txt",
 		"/C/Users/BalaMurugan/Downloads/data.csv",
 		"/C/Users/BalaMurugan/KTP Documents/KTP Presentation/Data and Analysis/Matrices/Function.R",
@@ -679,9 +700,6 @@
 		"/C/Users/BalaMurugan/AppData/Local/Temp/fz3temp-1/bankcle.php",
 		"/C/xampp/htdocs/ktp/pilot/collection/banktp.css",
 		"/C/xampp/htdocs/ktp/pilot/tracker/vis.js",
-		"/C/xampp/htdocs/ktp/pilot/lib/login-check.php",
-		"/C/xampp/htdocs/ktp/pilot/index.php",
-		"/C/xampp/htdocs/ktp/pilot/tracker/vis.php",
 		"/C/xampp/htdocs/ktp/pilot/login.php",
 		"/C/xampp/htdocs/ktp/pilot/recycle/scripts.js",
 		"/C/xampp/htdocs/ktp/pilot/recycle/styles.css",
@@ -763,8 +781,7 @@
 		"/C/xampp/htdocs/maps/scripts/tablesort.js",
 		"/C/Users/BalaMurugan/Desktop/google.csv",
 		"/C/xampp/htdocs/maps/server/deletephoto.php",
-		"/C/xampp/htdocs/maps/css/photos.css",
-		"/C/xampp/htdocs/maps/server/editproject.php"
+		"/C/xampp/htdocs/maps/css/photos.css"
 	],
 	"find":
 	{
@@ -782,6 +799,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"i",
+			"')\n",
+			"data",
+			"calcDegFunction",
+			"Utils.",
+			"Utils",
+			"operat",
+			"Operat",
+			"Graph.graph",
+			"operations	",
+			"operations",
+			"			<div id=\"gen\" class=\"card\">\n				<div class=\"card-header\">\n					<div class=\"card-heading\"><span class=\"toggle glyphicon glyphicon-chevron-down pull-right\"></span>General Information</div>\n				</div>\n				<div class=\"card-content\">\n					<table class=\"prop-table\">\n						<tbody>\n							<tr>\n								<td>No. of People</td>\n								<td>100</td>							\n							</tr>\n							<tr>\n								<td>No. of Connections</td>\n								<td>500</td>							\n							</tr>\n						</tbody>\n					</table>\n					<div id=\"degreedist\" style=\"margin-bottom:15px;\"></div>\n					<div class=\"card-comment\">This is a editable comment which can be appeded to each analysis, ultimately this will be expanded to provide a analysis and reporting tool</div>\n				</div>\n			</div>",
 			"highcharts.com",
 			"CSSTableGenerator",
 			"pull-right",
@@ -897,19 +926,7 @@
 			"width",
 			"range",
 			"images",
-			"warning",
-			"btn-warnin",
-			"btn-warninf",
-			"primary",
-			"btn-prim",
-			"switch-smal",
-			"make-switch",
-			"navbar-",
-			";\n",
-			"span",
-			"collapse",
-			"fonts",
-			"fon"
+			"warning"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -917,6 +934,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"temp",
 			"property-table",
 			"./fonts",
 			"=",
@@ -941,7 +959,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -949,15 +967,15 @@
 					"file": "pilot/final/index.html",
 					"settings":
 					{
-						"buffer_size": 1837,
+						"buffer_size": 1225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								534,
-								534
+								835,
+								835
 							]
 						],
 						"settings":
@@ -977,15 +995,15 @@
 					"file": "pilot/final/index.css",
 					"settings":
 					{
-						"buffer_size": 1542,
+						"buffer_size": 1556,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								401,
-								401
+								1065,
+								1065
 							]
 						],
 						"settings":
@@ -995,7 +1013,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 448.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1005,15 +1023,15 @@
 					"file": "pilot/final/index.js",
 					"settings":
 					{
-						"buffer_size": 1302,
+						"buffer_size": 2569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								229,
-								229
+								2232,
+								2232
 							]
 						],
 						"settings":
@@ -1029,23 +1047,79 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/C/Users/BalaMurugan/Downloads/index.php",
+					"file": "pilot/final/lib/ch-styles.js",
 					"settings":
 					{
-						"buffer_size": 6522,
+						"buffer_size": 1135,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								322,
-								322
+								357,
+								357
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pilot/final/lib/vivagraph.js",
+					"settings":
+					{
+						"buffer_size": 224656,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46067,
+								46067
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16556.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pilot/final/lib/utils.js",
+					"settings":
+					{
+						"buffer_size": 4452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4422,
+								4422
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Utilities.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1113,6 +1187,6 @@
 	"show_open_files": true,
 	"show_tabs": false,
 	"side_bar_visible": true,
-	"side_bar_width": 192.0,
+	"side_bar_width": 98.0,
 	"status_bar_visible": false
 }

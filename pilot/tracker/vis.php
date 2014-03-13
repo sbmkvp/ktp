@@ -16,7 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="./vis.css">
 		<script type="text/javascript" src="../lib/jquery.js"></script>
 		<script type="text/javascript" src="../lib/bootstrap.js"></script>
-		<script type="text/javascript" src="../lib/vivagraph.js"></script>
+		<script type="text/javascript" src="../final/lib/vivagraph.js"></script>
 		<script type="text/javascript" src="./vis.js"></script>
 	</head>
 	<body>

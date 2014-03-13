@@ -1,23 +1,15 @@
 $(document).ready(function(){
-	gen = card(analysis('general','somme useless stuff'));
-	gen1 = card(analysis('general','somme useless stuff'));
-	gen2 = card(analysis('general','somme useless stuff'));
-	gen3 = card(analysis('general','somme useless stuff'));
-	gen4 = card(analysis('general','somme useless stuff'));
-	gen5 = card(analysis('general','somme useless stuff'));
-	gen6 = card(analysis('general','somme useless stuff'));
-	gen7 = card(analysis('general','somme useless stuff'));
+	pl = new plot('cle');
 });
 
 var card = function(results){
-	if (results==null){ return null; }
 	var wrapper = $('<div class="card"></div>');
 	$('#ana').append(wrapper);
 	var header = $('<div class="card-header"></div>');
 	wrapper.append(header);
 	var heading = $('<div class="card-heading">'+results.name+'</div>');
 	header.append(heading);
-	var toggle = $('<span class="glyphicon glyphicon-chevron-down pull-right"></span>').on('click',function(){
+	var toggle = $('<span class="glyphicon glyphicon-chevron-up pull-right"></span>').on('click',function(){
 		$(this).parent().parent().next().slideToggle(500);
 		if($(this).attr('class').indexOf('glyphicon-chevron-down')>-1){
 			$(this).removeClass('glyphicon-chevron-down');
@@ -41,30 +33,58 @@ var card = function(results){
 			var ch = $('<div class="chart"></div>');
 			content.append(ch);
 			ch.height(ch.width());
-			ch.highcharts(new barChart(results.charts[i][0],results.charts[i][1]));
+			ch.highcharts(new barChart(results.charts[i][0],results.charts[i][1],results.charts[i][2]));
 		}
 	}
 	var comment = $('<div class="card-comment">Sample Comment</div>');
 	comment.editable();
 	content.append(comment);
-
 	return wrapper;
 }
 
-var analysis = function (type,graph) {
-	if(!graph){
-		return null;
-	}
-	if (type=='general'){
-		return {
-			'name':'General Information',
-			'table' : [
-				['No. of People',100],
-				['No. of Connections',500]
-			],
-			'charts' : [
-				['degree',[5,31,8,4,4,6,2,2,1]]
-			]
+var plot = function(issue,layout){
+	issue = issue || 'cle';
+	layout = layout || 'force';
+
+	var self = this;
+	var url = './lib/pull.php?table=bank'+issue;
+	$.getJSON(url,function(data){
+		utils().dataCorrector(data);
+		data = utils().refine(data);
+		var graph = utils().makeGraph(data);
+		self.setData(data,graph);
+		self.genCards();
+		self.drawGraph();
+	});
+	return self = {
+		changeTo: function(x){
+			var url = './lib/pull.php?table=bank'+x;
+			$.getJSON(url,function(data){
+				utils().dataCorrector(data);
+				data = utils().refine(data);
+				var graph = utils().makeGraph(data);
+				self.setData(data,graph);
+				self.genCards();
+			});
+		},
+		setData: function(d,g){
+			this.data=d;
+			this.graph=g;
+		},
+		genCards: function(){
+			if(this.cards){
+				for(i in this.cards){
+					this.cards[i].remove();
+				}
+			}
+			var analysis = utils().analysis(this.graph);
+			this.cards = [];
+			for (i in analysis) {
+				this.cards[i] = new card(analysis[i]);
+			}
+		},
+		drawGraph: function(){
+			console.log('hello');
 		}
-	}
+	};
 }
