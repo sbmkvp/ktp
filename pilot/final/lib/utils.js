@@ -27,6 +27,13 @@ var utils = function (){
 			}
 			return [min,max,tbins,counts];
 		},
+		average: function (x) {
+			var sum=0;
+			for(i in x){
+				sum+=x[i]
+			}
+			return sum/x.length;
+		},
 		dataCorrector: function (data) {
 			var corrections =[
 				['Andrew','Andrew Martin'],
@@ -126,7 +133,14 @@ var utils = function (){
 		analysis: function (graph) {
 			var ops = Viva.Graph.operations();
 			var degree = graph.getDegree();
+			var bet = Viva.Graph.centrality().betweennessCentrality(graph).sort(function(a,b){
+				if (Number(a.key)<Number(b.key)){ return -1; }
+				if (Number(a.key)>Number(b.key)){ return 1; }
+				return 0;
+			});
+			tempbet = []; for(i in bet) { tempbet[i] = bet[i].value}
 			var degDist = utils().distribution(degree,10);
+			var betDist = utils().distribution(tempbet,10);
 			return [
 				{
 					'name':'General Information',
@@ -140,8 +154,8 @@ var utils = function (){
 					'name':'Connectivity',
 					'table' : [
 						['Average Connections',ops.avgDegree(graph).toFixed(2)],
-						['Min. Connections',degDist[0]],
-						['Max. Connections',degDist[1]]
+						['Min. Connections',degDist[0].toFixed(2)],
+						['Max. Connections',degDist[1].toFixed(2)]
 					],
 					'charts' : [
 						['Degree',degDist[3],degDist[2]]
@@ -149,18 +163,37 @@ var utils = function (){
 				},
 				{
 					'name':'Centralness',
-					'table': [
-						['sample',20],
-						['sample',20],
-						['sample',20],
+					'table' : [
+						['Average centralness',utils().average(tempbet).toFixed(2)],
+						['Min. centralness',betDist[0].toFixed(2)],
+						['Max. centralness',betDist[1].toFixed(2)]
 					],
-					'charts': [
-						['Betweenness',degDist[3],degDist[2]],
-						['Betweenness',degDist[3],degDist[2]],
-						['Betweenness',degDist[3],degDist[2]],
-					],
+					'charts' : [
+						['Centrality',betDist[3],betDist[2]]
+					]
 				}
 			]
+		},
+		nodePositions:function(n,t) {
+			t = t || 'circle';
+			console.log(t);
+			var nodePositions = [];
+			if (t == 'circle') {
+				for (var i=0; i<n; i++) {
+					nodePositions.push({
+						x:window.innerHeight*0.7/2*Math.cos(i*2*Math.PI/n),
+						y:window.innerHeight*0.7/2*Math.sin(i*2*Math.PI/n)
+					});
+				}
+			} else if (t == 'random'){
+				for (var i=0; i<n; i++) {
+					nodePositions.push({
+						x:window.innerHeight*0.7*Math.random(),
+						y:window.innerHeight*0.7*Math.random()
+					});
+				}
+			}
+			return nodePositions;
 		}
 	};
 };
