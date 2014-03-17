@@ -115,7 +115,6 @@ var plot = function(issue,layout){
 			for (i in analysis) {
 				this.cards[i] = new card(analysis[i]);
 			}
-			this.select('General Information')
 		},
 		drawGraph: function(){
 			if($('#vis').children('svg')[0]){$('#vis').children('svg').remove();}
@@ -128,22 +127,26 @@ var plot = function(issue,layout){
                     });
 			this.graphics = Viva.Graph.View.svgGraphics();
 			this.graphics.node(function(node) {
-				var size = node.links.length/2.2;
-				if (size<.5){size=.5};
+				// var size = node.links.length/2.2;
+				// if (size<.5){size=.5};
 				var ui = Viva.Graph.svg('g'),
 					svgText = Viva.Graph.svg('text')
-						.attr('x',size*1.2)
-						.attr('y',size*1.2)
-						.attr('fill','#34495E')
+						// .attr('x',size*1.2)
+						// .attr('y',size*1.2)
+						.attr('x',5)
+						.attr('y',5)
+						.attr('fill','#444')
 						.attr('font-family', 'Helvetica,Arial')
-						.attr('font-size',(5+size)+'px')
+						// .attr('font-size',(5+size)+'px')
+						.attr('font-size','8px')
 						.text(node.data['name']),
 					circle = Viva.Graph.svg('circle')
 						.attr('cx', 0)
 						.attr('cy', 0)
-						.attr('r', size*1.5)
-						.attr('stroke-width', '2')
-						.attr('stroke', 'white')
+						// .attr('r', size*1.5)
+						.attr('r', 10)
+						.attr('stroke-width', '0')
+						.attr('stroke', '#444')
 						.attr('fill',(pal[node.data.org]? pal[node.data.org] :pal['Others']));
 					ui.append(circle);
 					ui.append(svgText);
@@ -163,6 +166,8 @@ var plot = function(issue,layout){
 			});
 		this.renderer = Viva.Graph.View.renderer(this.graph,{layout:this.layout,container:document.getElementById('vis'),graphics:this.graphics});
 		this.renderer.run();
+		var ren = this.renderer
+		this.select('General Information')
 		},
 		select:function(name){
 			for(i in this.cards) {
@@ -173,6 +178,17 @@ var plot = function(issue,layout){
 					this.cards[i].header.css('background-color','#ccc');
 					this.cards[i].heading.css('color','#333');
 				}
+			}
+			var gr = this.graph;
+			var gra = this.graphics;
+			if(name == 'Connectivity') {
+				gr.forEachNode(function(node){ $(gra.getNodeUI(node.id)).children('circle').attr('r',node.links.length/1.5)});
+			} else if (name =='Centralness') {
+				var cent = Viva.Graph.centrality().betweennessCentrality(gr).sort(function(a,b){ if (Number(a.key)<Number(b.key)){ return -1; } if (Number(a.key)>Number(b.key)){ return 1; } return 0; });
+				gr.forEachNode(function(node){node.cent = cent[node.id].value});
+				gr.forEachNode(function(node){ $(gra.getNodeUI(node.id)).children('circle').attr('r',node.cent/15)});
+			} else if(name == 'General Information'){
+				gr.forEachNode(function(node){ $(gra.getNodeUI(node.id)).children('circle').attr('r',10)});
 			}
 		},
 		test : function() {

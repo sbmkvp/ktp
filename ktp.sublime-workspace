@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"gra",
+				"gra"
+			],
+			[
+				"leg",
+				"legBody"
+			],
+			[
+				"le",
+				"legBody"
+			],
+			[
+				"L",
+				"LUL"
+			],
+			[
+				"top",
+				"topDegree"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
 				"get",
 				"getDegree"
 			],
@@ -490,30 +514,6 @@
 			[
 				"json",
 				"json_encode"
-			],
-			[
-				"name",
-				"namechk"
-			],
-			[
-				"lat",
-				"LatLng"
-			],
-			[
-				"la",
-				"LatLng"
-			],
-			[
-				"sl",
-				"slpv"
-			],
-			[
-				"sz",
-				"szom"
-			],
-			[
-				"link",
-				"link_con"
 			]
 		]
 	},
@@ -540,7 +540,7 @@
 			"file": "pilot/final/index.js",
 			"settings":
 			{
-				"buffer_size": 5068,
+				"buffer_size": 6957,
 				"line_ending": "Windows"
 			}
 		},
@@ -564,7 +564,7 @@
 			"file": "pilot/final/lib/utils.js",
 			"settings":
 			{
-				"buffer_size": 5446,
+				"buffer_size": 6231,
 				"line_ending": "Windows",
 				"name": "Utilities.js"
 			}
@@ -799,6 +799,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"select",
 			"100",
 			"hello",
 			"i",
@@ -925,8 +926,7 @@
 			"\n#infoheader {\n	\n}",
 			"infowindo",
 			";\n",
-			"width",
-			"range"
+			"width"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1023,15 +1023,15 @@
 					"file": "pilot/final/index.js",
 					"settings":
 					{
-						"buffer_size": 5068,
+						"buffer_size": 6957,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1830,
-								1830
+								6955,
+								6955
 							]
 						],
 						"settings":
@@ -1040,7 +1040,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1142.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1084,8 +1084,8 @@
 						"selection":
 						[
 							[
-								71418,
-								71418
+								46068,
+								46068
 							]
 						],
 						"settings":
@@ -1095,7 +1095,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 27631.0,
+						"translation.y": 17713.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1105,15 +1105,15 @@
 					"file": "pilot/final/lib/utils.js",
 					"settings":
 					{
-						"buffer_size": 5446,
+						"buffer_size": 6231,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3566,
-								3566
+								5310,
+								5310
 							]
 						],
 						"settings":
