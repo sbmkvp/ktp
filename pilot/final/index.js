@@ -1,3 +1,12 @@
+var pal = {
+	'TfL': '#fe9a2e',
+	'LUL':'#fe9a2e',
+	'Dragados':'#0B3861',
+	'URS':'#80A453',
+	'Wilkinson Eyre':'#f2de5d',
+	'Others':'#848484',
+}
+
 $(document).ready(function(){
 	pl = new plot('cle');
 });
@@ -34,7 +43,20 @@ var card = function(results){
 			var ch = $('<div class="col-xs-6" style="max-height:150px;"></div>');row.append(ch);
 			ch.height(ch.width());
 			ch.highcharts(new barChart(results.charts[i][0],results.charts[i][1],results.charts[i][2]));
+			var ls = $('<div class="col-xs-6" style="padding-left:0px;"></div>');row.append(ls);
+			var lstab = $('<table class="prop-table"></table>');ls.append(lstab);
+			// lstab.append('<thead><tr><th>Name</th><th>Degree</th></tr></thead>');
+			// resglob.push(results);
+			for (j in results.charts[i][3]){
+				lstab.append ('<tr><td>'+results.charts[i][3][j].name.split(' ')[0]+' .'+results.charts[i][3][j].name.split(' ')[1].slice(0,1)+'</td><td>'+results.charts[i][3][j].value.toFixed(0)+'</td></tr>')
+			}
 		}
+	}
+	if(results.legend) {
+		var legend = $('<table class="prop-table"></table>');
+		var legBody = $('<tbody></tbody>');
+		for (i in Object.keys(pal)) { legBody.append('<tr><td>'+Object.keys(pal)[i]+'</td><td>'+results.legend[1][results.legend[0].indexOf(Object.keys(pal)[i])]+'</td><td style="background-color:'+pal[Object.keys(pal)[i]]+';width:25px;"></td></tr>'); }
+		content.append(legend.append(legBody));
 	}
 	var comment = $('<div class="card-comment">Sample Comment</div>').editable(); content.append(comment);
 	return {
@@ -122,7 +144,7 @@ var plot = function(issue,layout){
 						.attr('r', size*1.5)
 						.attr('stroke-width', '2')
 						.attr('stroke', 'white')
-						.attr('fill',(node.data.org=='TfL'||node.data.org=='LUL')?'#fe9a2e':(node.data.org=='Dragados'?'#0B3861':'#848484'));
+						.attr('fill',(pal[node.data.org]? pal[node.data.org] :pal['Others']));
 					ui.append(circle);
 					ui.append(svgText);
 					$(ui).hover(function() {

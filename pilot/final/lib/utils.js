@@ -141,6 +141,13 @@ var utils = function (){
 			tempbet = []; for(i in bet) { tempbet[i] = bet[i].value}
 			var degDist = utils().distribution(degree,10);
 			var betDist = utils().distribution(tempbet,10);
+			var topDegree = Viva.Graph.centrality().degreeCentrality(pl.graph,'both').splice(0,6);
+			for (i in topDegree) { topDegree[i].name = graph.getNode(topDegree[i].key).data.name; }
+			var topBet = Viva.Graph.centrality().betweennessCentrality(graph).splice(0,6);
+			for (i in topBet) { topBet[i].name = graph.getNode(Number(topBet[i].key)).data.name; }
+			var org =[]; for(i in pl.data.nodes) {org.push(pl.data.nodes[i].org)};
+			for(i in org) { if(Object.keys(pal).indexOf(org[i])<0){org[i]='Others'}}
+			function getUniqueCount(arr) { var a = [], b = [], prev; arr.sort(); for ( var i = 0; i < arr.length; i++ ) { if ( arr[i] !== prev ) { a.push(arr[i]); b.push(1); } else { b[b.length-1]++; } prev = arr[i]; } return [a, b]; }
 			return [
 				{
 					'name':'General Information',
@@ -148,7 +155,8 @@ var utils = function (){
 						['No. of People',graph.getNodesCount()],
 						['No. of Connections',graph.getLinksCount()],
 						['Density of Network',ops.density(graph).toFixed(2)]
-					]
+					],
+					'legend' : getUniqueCount(org),
 				},
 				{
 					'name':'Connectivity',
@@ -158,7 +166,7 @@ var utils = function (){
 						['Max. Connections',degDist[1].toFixed(2)]
 					],
 					'charts' : [
-						['Degree',degDist[3],degDist[2]]
+						['Degree',degDist[3],degDist[2],topDegree]
 					]
 				},
 				{
@@ -169,7 +177,7 @@ var utils = function (){
 						['Max. centralness',betDist[1].toFixed(2)]
 					],
 					'charts' : [
-						['Centrality',betDist[3],betDist[2]]
+						['Centrality',betDist[3],betDist[2],topBet]
 					]
 				}
 			]
